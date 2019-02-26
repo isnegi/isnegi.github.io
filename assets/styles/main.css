@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Finger+Paint');
+
+body { 
+    margin: 0; 
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    position: absolute;
+}
+.message-bubble-container {
+    margin-left: 2em;
+}
+.message-bubble {
+	position: relative;
+	background: #C70039;
+    border-radius: .4em;
+    padding: 1em;
+}
+
+
+.message-bubble:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 78%;
+	width: 0;
+	height: 0;
+	border: 0.688em solid transparent;
+	border-left-color: #C70039;
+	border-right: 0;
+	margin-top: -0.687em;
+	margin-right: -0.687em;
+}
+.message-text {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: 'Finger Paint', cursive;
+}
+.avatar-res {
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .message-text {
+        font-size: 1.2em;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .message-text {
+        font-size: 1.6em;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .message-text {
+        font-size: 2em;
+    }
+  }
+  
