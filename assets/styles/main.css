@@ -11,7 +11,7 @@ body {
     position: absolute;
 }
 .message-bubble-container {
-    margin-left: 2em;
+    padding-left: 2em;
 }
 .message-bubble {
 	position: relative;
