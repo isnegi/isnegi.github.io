@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Finger+Paint');
+/* @import url('https://fonts.googleapis.com/css?family=Finger+Paint');
 
 body { 
     margin: 0; 
@@ -58,4 +58,62 @@ body {
         font-size: 1.6em;
     }
   }
+   */
+
+.card {
+    border: none;
+}
+.card-header {
+    background-color: #fff;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+.btn-link {
+    font-weight: bold;
+    color: 'green';
+    text-decoration: none;
+}
+.btn-link:hover, .btn-link:active {
+    text-decoration: none;
+}
+.card-body {
+    padding: 0;
+}
+.btn {
+    padding: 0;
+    /* padding-top: 0.375rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.375rem;
+    padding-left: 0.75rem; */
+}
+
+
+
+/*SELF WRITTEN*/
+img.corpany_logo {
+    width: 48px;
+    height: auto;    
+    margin: 1rem;
+}
+
+/*DOUGHNUT CHART*/
+.chart-container {
+    width: 80%;
+    height: 480px;
+    margin: 0 auto;
+  }
   
+  .pie-chart-container,
+  .doughnut-chart-container {
+    height: 360px;
+    width: 360px;
+    float: left;
+  }
+
+  
+  .option-heading:before           { content: "<i class='fa fa-caret-right' aria-hidden='true'></i>"; }
+.option-heading.is-active:before { content: "<i class='fa fa-caret-down' aria-hidden='true'></i>"; }
+
+/* Helpers */
+.is-hidden { display: none; }
