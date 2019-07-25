@@ -128,7 +128,6 @@ img.corpany_logo {
 
 .watermark-wip {
     filter: blur(10px) grayscale(80%);
-    background: url(./assets/images/under_construction.png) no-repeat;
     background-position: center; 
 }
 .icon-rotate {
