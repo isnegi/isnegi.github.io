@@ -63,6 +63,14 @@ body {
 .card {
     border: none;
 }
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wip-box {
+    position: absolute;z-index: 2;
+}
 .card-header {
     background-color: #fff;
     border-bottom: none;
@@ -117,3 +125,16 @@ img.corpany_logo {
 
 /* Helpers */
 .is-hidden { display: none; }
+
+.watermark-wip {
+    filter: blur(10px) grayscale(80%);
+    background: url(./assets/images/under_construction.png) no-repeat;
+    background-position: center; 
+}
+.icon-rotate {
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}	
+}
