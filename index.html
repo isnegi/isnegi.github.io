@@ -1581,13 +1581,13 @@
                     type: mimeType
                 });
 
-                if(!UploadVideo) {
+                if(!uploadVideo) {
                     alert('YouTube API are not available.');
                     return;
                 }
 
-                UploadVideo.callback = callback;
-                UploadVideo.uploadFile(fileName, blob);
+                uploadVideo.callback = callback;
+                uploadVideo.uploadFile(fileName, blob);
             }
 
             var uploadVideo;
