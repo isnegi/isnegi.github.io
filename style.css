@@ -58,6 +58,7 @@ div.left-nav {
   color: #F2C014;
   flex: 3;
   font-family: 'Poppins', sans-serif;
+  width: 100%;
 }
 div.main-area {
   display: flex;
