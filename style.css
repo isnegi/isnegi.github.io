@@ -9,7 +9,6 @@
 }
 
 body {
-    height: 98vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,6 +117,7 @@ p.download-section {
 }
 
 @media only screen and (max-width: 800px) {
+    
     .xxl-font {
         font-size: 32px;
     }
