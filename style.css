@@ -1,28 +1,65 @@
-html * {
-   color: #000;
-   font-family: 'Space Mono';
+:root {
+    --primary-txt: #E1D1B8;
+    --primary-bg: #86996E;
+    --secondary-bg: #97A895;
+
+    /* --primary-txt: #2249B0;
+    --primary-bg: #8B9AD7;
+    --secondary-bg: #ebeefa; */
 }
+
+body {
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-bg);
+    background:radial-gradient(circle, #97A895 10%, transparent 11%) 0% 0% / 3em 3em #E1D1B8;
+    /* opacity:0.3; */
+    background-size: 15px 15px;
+    color: #E1D1B8;
+}
+
 div#page {
+    max-width: 1048px;
     margin: 2rem;
     padding: 2rem;
     border-radius: .4rem;
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    box-shadow:
-      1px 2px 2px hsl(220deg 60% 50% / 0.2),
-      2px 4px 4px hsl(220deg 60% 50% / 0.2),
-      4px 8px 8px hsl(220deg 60% 50% / 0.2),
-      8px 16px 16px hsl(220deg 60% 50% / 0.2),
-      16px 32px 32px hsl(220deg 60% 50% / 0.2);
+    background: var(--primary-bg);
 }
+
+.custom-link{
+    color: var(--primary-txt);
+}
+
 .container {
     display: flex;
     flex-direction: column;
 }
 
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.lora-bold {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.no-top {
+    margin-top: 0rem;
+}
+.no-bottom {
+    margin-bottom: 0rem;
+}
+.xxl-font {
+    font-size: 48px;
+    text-transform: uppercase;
+}
 div.header {
     display: flex;
     align-items: center;
@@ -47,39 +84,43 @@ li span.first-block {
     font-weight: bold;
 }
 a.btn {
-    border: 1px solid #000;
+    border: 1px solid var(--primary-txt);
     padding: .4rem 1rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
 }
-span.cta-block {
+.cta-block {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #000;
+    border: 1px solid var(--primary-txt);
     padding: .4rem .8rem;
     margin-right: .4rem;
     border-radius: .2rem;
 }
-span.cta-block i {
+.cta-block i {
     font-size: 1.2rem;
     padding-right: .4rem;
 }
-span.cta-block a {
+.cta-block a {
     font-size: .8rem;
 }
 hr.solid {
-    border: .08rem solid #000;
+    border: .08rem solid var(--primary-txt);
 }
 mark.small-text {
     font-size: .6rem;
 }
 p.download-section {
     margin-top: 2rem;
+    display: inline-block;
 }
 
 @media only screen and (max-width: 800px) {
+    .xxl-font {
+        font-size: 32px;
+    }
     div.sub-header {
       flex-direction: column;
       align-items: flex-start;
