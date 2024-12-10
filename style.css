@@ -103,7 +103,7 @@ header.header {
 }
 
 .hero__container img {
-    transform: translate(-5%, -5%) rotate(3deg);
+    transform: translate(-5%, 0%) rotate(3deg);
     transform-origin: center;
     box-shadow: rgb(33 33 33) 4px 4px 2px;
     border-radius: 16px;
