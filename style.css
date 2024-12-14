@@ -30,7 +30,7 @@
 
 @font-face {
     font-family: "Poppins-Regular";
-    src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+    src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
 }
 
 html {
@@ -191,28 +191,71 @@ header.header {
         padding: 0 6.94rem;
     }
 }
+.container__top_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.widget__date_and_time {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-left: .8rem;
+    margin-left: .8rem;
+    font-family: "Poppins-Regular", sans-serif;
+}
+
+.clock__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.widget__date_and_time .date {
+    margin-left: 4px;
+    font-size: 0.8rem;
+}
+
+.time__zone {
+    font-size: 10px;
+    display: block;
+    margin-top: -12px;
+    font-weight: bold;
+    margin-left: -8px;
+}
+
+.widget__date_and_time .clock__wrapper .sec {
+
+}
+
 @media all and (max-width: 576px) {
     header a img {
         height: 32px;
         width: 32px;
     }
+
     .headline img {
         height: 32px;
         width: 32px;
     }
+
     .hero__content {
         flex-direction: column;
     }
+
     .headline {
         margin-bottom: 4rem;
         margin-right: 0rem;
     }
+
     .hero__container img {
         height: 240px;
     }
+
     .socials__icon__linkedin {
         margin-top: 1.6rem;
-     }
+    }
 }
 
 @media all and (min-width: 576px) {
